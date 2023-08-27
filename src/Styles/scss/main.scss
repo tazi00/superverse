@@ -96,6 +96,7 @@ header {
     }
   }
   .logo-box {
+    text-align: center;
     img {
       width: 400px;
       margin-inline: auto;
@@ -126,7 +127,12 @@ header {
           padding: 1px 2px;
           color: #fff;
           letter-spacing: 3px;
-
+          &.active {
+            &:before,
+            &:after {
+              top: -2px;
+            }
+          }
           &:before,
           &:after {
             display: block;

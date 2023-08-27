@@ -1,6 +1,7 @@
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
+import Trending from "../Pages/Trending/Trending";
 
 const AppLayoutRoutes = [
   {
@@ -20,8 +21,8 @@ const AppLayoutRoutes = [
     element: <h2>News page</h2>,
   },
   {
-    path: "/cattegories",
-    element: <h2>Cattegories page</h2>,
+    path: "/trending",
+    element: <Trending />,
   },
 ];
 

@@ -96,6 +96,9 @@ header .register-box ul li a.signup {
   background-color: #ffc500;
   color: #000;
 }
+header .logo-box {
+  text-align: center;
+}
 header .logo-box img {
   width: 400px;
   margin-inline: auto;
@@ -126,6 +129,9 @@ header nav.navbar ul li a {
   padding: 1px 2px;
   color: #fff;
   letter-spacing: 3px;
+}
+header nav.navbar ul li a.active:before, header nav.navbar ul li a.active:after {
+  top: -2px;
 }
 header nav.navbar ul li a:before, header nav.navbar ul li a:after {
   display: block;

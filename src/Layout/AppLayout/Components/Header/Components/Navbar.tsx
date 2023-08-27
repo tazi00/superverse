@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const navItems = [
@@ -33,9 +34,9 @@ function Navbar() {
       <ul>
         {navItems.map((item) => (
           <li key={item.label}>
-            <a data-glitch={item.label} href={item.link}>
+            <NavLink data-glitch={item.label} to={item.link}>
               {item.label}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
