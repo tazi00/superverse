@@ -1,0 +1,18 @@
+{
+  "NewsData": [
+    {
+      "id": 1,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrj3DbbZKgXN52rLppxI4iG5Bo1JkFZbu7nQ&usqp=CAU",
+      "newsTag": "Comic",
+      "newsTitle": "Spider-Man: No Way Home to Doctor Strange in the Multiverse of Madness, here's how to watch the multiverse saga in ...",
+      "desc": "According to a recent report from The Cosmic Circus, Doctor Strange's next outing is under development. It will be based on the Time Runs Out ..."
+    },
+    {
+      "id": 2,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC25ZqXZsbLBkQwQcbkVa0IjtfoIWyCMWvUg&usqp=CAU",
+      "newsTag": "Comic",
+      "newsTitle": "The Marvel's Spider-Man 2 release date is set for October 20, 2023. Insomniac confirmed the news at Summer Game Fest, with creative director ...",
+      "desc": "We're thrilled to reveal the first-ever gameplay of Marvel's Spider-Man 2, coming fall 2023 on PlayStation 5! 'Marvel's Spider-Man 2' swings to PS5 on October 20, 2023."
+    }
+  ]
+}
