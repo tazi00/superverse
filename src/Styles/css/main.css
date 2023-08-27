@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+:root {
+  --primary-text-clr: #333;
+  --secondary-text-clr: #555;
+  --bg-body: #fff;
+  --btn-primary-clr: orangered;
+  ---btn-text-clr: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Manrope, "sans-serif";
+  background-color: #ea2027;
+  background: url("../../assets/bg-img.webp"), linear-gradient(151.47deg, #fa005a -21.32%, #280033 77.37%), #520044;
+  min-height: 100vh;
+  color: var(--primary-text-clr);
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+}
+
+.container {
+  width: min(75rem, 95%);
+  margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row > * {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+header {
+  padding-block: 20px;
+}
+header .register-box {
+  display: flex;
+  justify-content: end;
+}
+header .register-box ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .register-box ul li a {
+  padding: 6px 18px;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+header .register-box ul li a.login {
+  border: 2px solid rgb(255, 255, 255);
+}
+header .register-box ul li a.signup {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #ffc500;
+  color: #000;
+}
+header .logo-box img {
+  width: 400px;
+  margin-inline: auto;
+  display: block;
+}
+header nav.navbar ul {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: rgba(250, 0, 90, 0.2392156863);
+  padding: 8px;
+  margin-top: 40px;
+  border: 5px solid rgba(255, 197, 0, 0.1803921569);
+  border-radius: 16px;
+}
+header nav.navbar ul li {
+  position: relative;
+}
+header nav.navbar ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: static;
+  transform: translate(0%, 0);
+  margin: 0;
+  padding: 1px 2px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+header nav.navbar ul li a:before, header nav.navbar ul li a:after {
+  display: block;
+  content: attr(data-glitch);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+header nav.navbar ul li a:after {
+  color: #f0f;
+  z-index: -2;
+}
+header nav.navbar ul li a:before {
+  color: #0ff;
+  z-index: -1;
+}
+header nav.navbar ul li a:hover:before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+}
+header nav.navbar ul li a:hover:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
+}
+
+section.hero-slider {
+  margin-top: 70px;
+  position: relative;
+  padding-inline: 100px;
+}
+section.hero-slider > img {
+  position: absolute;
+  width: 209px;
+  filter: opacity(0.4);
+}
+section.hero-slider > img.dot1 {
+  left: 30px;
+  top: -40px;
+}
+section.hero-slider > img.dot2 {
+  right: 30px;
+  bottom: -20px;
+}
+section.hero-slider .swiper .slider-box {
+  position: relative;
+}
+section.hero-slider .swiper .slider-box img {
+  width: clamp(60%, 700px, 1000px);
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  height: 450px;
+}
+section.hero-slider .swiper .slider-box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #141414 43%, transparent 60%);
+  border-radius: 10px;
+}
+section.hero-slider .swiper .slider-box .content .side {
+  height: 100%;
+  width: 42%;
+  padding-top: 100px;
+  margin-left: auto;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+section.hero-slider .swiper .slider-box .content .side h4 {
+  color: white;
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+section.hero-slider .swiper .slider-box .content .side h4.comic {
+  color: white;
+  background: #ff1535;
+}
+section.hero-slider .swiper .slider-box .content .side h3 {
+  font-size: 27px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 32px;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 20px;
+}
+section.hero-slider .swiper .slider-box .content .side p {
+  font-size: 14px;
+  color: #bfbfbf;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
